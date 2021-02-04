@@ -4,7 +4,7 @@ const removeButton = document.querySelector('.remove-btn');
 const todoList = document.querySelector('.todo-list');
 const chooseList = document.querySelector('.choose-list');
 
-let toStoreList = JSON.parse(localStorage.getItem('storedTodo'));
+let toStoreList = JSON.parse(localStorage.getItem('storedTodo')) || [];
 
 //--------------------functions---------------------//
 // Show LIST ITEM to DOM
