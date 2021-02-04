@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fong's Todo List</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>-- Todo List --</h1>
+    <div class="form-and-list">
+        <form>
+            <input type="text" placeholder="What to do?" class="todo-input">
+            <button class="add-btn">
+                <i class="fas fa-plus-circle"></i>
+            </button>
+        </form>
+        <div class="select-and-remove">
+            <select class="choose-list" name="choose-list">
+                <option value="all">All</option>
+                <option value="uncompleted">Uncompleted</option>
+                <option value="completed">Completed</option>
+            </select>
+            <button class="remove-btn">
+                Remove all completed todos
+            </button>
+        </div>
+        <ul class="todo-list"></ul>
+    </div>
+
+    <!-- Script -->
+    <script src="script2.js"></script>
+</body>
+</html>
+
+<!-- What to add -->
+<!-- click to change todo item -->
+<!-- drag to change the order of the list -->
